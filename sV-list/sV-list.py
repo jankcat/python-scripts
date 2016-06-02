@@ -59,7 +59,7 @@ def main(argv):
 		outfile.write(nmop)
 		print('.',end="",flush=True)
 		counter += 1
-	# done!
+	# done
 	print('\nDone! Scanned ' + str(counter) + ' ip/port combos!')
 
 if __name__ == "__main__":
