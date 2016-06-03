@@ -6,6 +6,7 @@ import getopt
 import requests
 
 def main(argv):
+	print('Requires python-requests. Install with "pip install requests"')
 	# get args
 	inputfile = ''
 	outputfile = ''
