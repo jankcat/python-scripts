@@ -43,13 +43,13 @@ def main(argv):
 	counter = 0
 	total = len(ip_list)
 	for combo in ip_list:
-		r = requests.get('http://freegeoip.net/csv/' + combo[0])
+		r = requests.get('http://199.116.235.115:8080/csv/' + combo[0])
 		if r.status_code is not 200:
 			print('It looks like the daily limit of 10000 is exceeded. Exiting...')
 			print('\nDone! Located ' + str(counter) + ' IPs!')
 			sys.exit(1)
-		nmop = r.text.strip() + '\n'
-		outfile.write(nmop)
+		outbuf = r.text.strip() + '\n'
+		outfile.write(outbuf)
 		counter += 1
 		print('Working... ' + str(counter) + ' / ' + str(total) + ' IPs located!', end='\r')
 	# done
