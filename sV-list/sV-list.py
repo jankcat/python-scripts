@@ -6,6 +6,7 @@ import nmap
 import getopt
 
 def main(argv):
+	print('Requires python-nmap. Install with "pip install python-nmap"')
 	# get args
 	inputfile = ''
 	outputfile = ''
