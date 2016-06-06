@@ -38,7 +38,7 @@ def main(argv):
 		ip_list = list(reader)
 	
 	# open output file for writing
-	outfile = open(outputfile, 'w')
+	outfile = open(outputfile, 'w', encoding='utf-8')
 	
 	# scan each ip/port combo
 	counter = 0
